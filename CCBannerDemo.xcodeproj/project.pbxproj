@@ -13,6 +13,7 @@
 		C345FA362074FAC400EBBA1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C345FA352074FAC400EBBA1B /* Assets.xcassets */; };
 		C345FA392074FAC400EBBA1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C345FA372074FAC400EBBA1B /* LaunchScreen.storyboard */; };
 		C345FA3C2074FAC400EBBA1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C345FA3B2074FAC400EBBA1B /* main.m */; };
+		C345FA472074FB3A00EBBA1B /* CCBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = C345FA452074FB3A00EBBA1B /* CCBanner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		C345FA382074FAC400EBBA1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C345FA3A2074FAC400EBBA1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C345FA3B2074FAC400EBBA1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C345FA452074FB3A00EBBA1B /* CCBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBanner.m; sourceTree = "<group>"; };
+		C345FA462074FB3A00EBBA1B /* CCBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBanner.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		C345FA2B2074FAC200EBBA1B /* CCBannerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C345FA442074FB3A00EBBA1B /* CCBanner */,
 				C345FA2C2074FAC200EBBA1B /* AppDelegate.h */,
 				C345FA2D2074FAC200EBBA1B /* AppDelegate.m */,
 				C345FA2F2074FAC200EBBA1B /* ViewController.h */,
@@ -69,6 +73,15 @@
 				C345FA3B2074FAC400EBBA1B /* main.m */,
 			);
 			path = CCBannerDemo;
+			sourceTree = "<group>";
+		};
+		C345FA442074FB3A00EBBA1B /* CCBanner */ = {
+			isa = PBXGroup;
+			children = (
+				C345FA452074FB3A00EBBA1B /* CCBanner.m */,
+				C345FA462074FB3A00EBBA1B /* CCBanner.h */,
+			);
+			path = CCBanner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C345FA312074FAC200EBBA1B /* ViewController.m in Sources */,
+				C345FA472074FB3A00EBBA1B /* CCBanner.m in Sources */,
 				C345FA3C2074FAC400EBBA1B /* main.m in Sources */,
 				C345FA2E2074FAC200EBBA1B /* AppDelegate.m in Sources */,
 			);

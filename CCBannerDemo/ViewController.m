@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
+#import "CCBanner.h"
+@interface ViewController ()<CCBannerDelegate>
 
 @end
 
@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    CCBanner *banner = [[CCBanner alloc]initWithFrame:CGRectMake(100, 100, 300, 110)];
+    UIImage * a = [[UIImage alloc]init];
+    UIImage * b = [[UIImage alloc]init];
+    
+    banner.imageArray = @[a,b,a,b];
+    banner.delegate = self;
+    [self.view addSubview:banner];
 }
 
 
@@ -25,5 +32,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+-(void)BannerViewTouch:(NSInteger)number{
+    NSLog(@"第几个%d", (int)number);
+}
 @end
